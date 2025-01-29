@@ -1,0 +1,33 @@
+﻿{
+  "name": "com.ireshsampath.unity-assets.ui-carousels",
+  "version": "1.0.0",
+  "displayName": "UI Carousels",
+  "description": "This asset provides a comprehensive solution for UI carousels in Unity, including customizable horizontal carousel and wheel carousel. Perfect for adding robust UI interactions to your project.",
+  "unity": "6000.0",
+  "unityRelease": "30f1",
+  "documentationUrl": "https://example.com/ui-carousels-docs",
+  "changelogUrl": "https://example.com/ui-carousels-changelog.html",
+  "licensesUrl": "https://example.com/ui-carousels-licensing.html",
+  "dependencies": {
+    "com.unity.textmeshpro": "5.0.0"
+  },
+  "samples": [
+    {
+      "displayName": "UI Carousels Sample",
+      "description": "An example scene demonstrating the use of UI carousels.",
+      "path": "Samples~/Sample 1"
+    }
+  ],
+  "keywords": [
+    "unity carousels",
+    "horizontal carousels",
+    "wheel carousel",
+    "UI carousels",
+    "carousels"
+  ],
+  "author": {
+    "name": "Iresh Sampath",
+    "email": "ireshsampath@gmail.com",
+    "url": "https://ireshsampath.portfoliobox.io/"
+  }
+}
