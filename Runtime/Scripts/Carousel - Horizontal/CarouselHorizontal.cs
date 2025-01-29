@@ -179,7 +179,7 @@ public class CarouselHorizontal : MonoBehaviour, IPointerDownHandler
 
         //    }
         //    i++;
-        }
+        //}
 
         //int i = 0;
         //foreach (GameObject card in _carouselCards)
