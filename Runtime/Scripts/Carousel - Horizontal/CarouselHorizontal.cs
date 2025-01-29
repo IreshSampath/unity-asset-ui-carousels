@@ -1,5 +1,5 @@
 using UnityEngine;
-//using DG.Tweening;
+using DG.Tweening;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -40,8 +40,8 @@ public class CarouselHorizontal : MonoBehaviour, IPointerDownHandler
         CreatePaginationDots();
         //ClickRight();
 
-      //  _carouselCards[_currentCardIndex].GetComponent<RectTransform>().DOScale(new Vector2(_cardsMaxScale, _cardsMaxScale), 0);
-       // _carouselCards[_currentCardIndex].transform.GetChild(0).GetComponent<RectTransform>().DOAnchorPosY(-_cardsGapY, 0);
+        _carouselCards[_currentCardIndex].GetComponent<RectTransform>().DOScale(new Vector2(_cardsMaxScale, _cardsMaxScale), 0);
+        _carouselCards[_currentCardIndex].transform.GetChild(0).GetComponent<RectTransform>().DOAnchorPosY(-_cardsGapY, 0);
 
     }
 
@@ -80,7 +80,7 @@ public class CarouselHorizontal : MonoBehaviour, IPointerDownHandler
                 dot.GetComponent<Image>().sprite = _paginationDotSelectedImg;
                 RectTransform dotRectTransform = _paginationDots[i].GetComponent<RectTransform>();
 
-              //  dotRectTransform.DOScale(new Vector3(1.5f, 1.5f), 0.25f);
+                dotRectTransform.DOScale(new Vector3(1.5f, 1.5f), 0.25f);
 
             }
             else
@@ -149,37 +149,37 @@ public class CarouselHorizontal : MonoBehaviour, IPointerDownHandler
 
     void HandleCarousel(int direction)
     {
-        //print(_currentCardIndex);
+        print(_currentCardIndex);
 
-        //int i = 0;
-        //foreach (GameObject card in _carouselCards)
-        //{
-        //    RectTransform cardRectTransform = card.GetComponent<RectTransform>();
-        //    cardRectTransform.DOAnchorPos(new Vector2(cardRectTransform.anchoredPosition.x + (_cardsGapX * direction), cardRectTransform.anchoredPosition.y), _transitionTime);
+        int i = 0;
+        foreach (GameObject card in _carouselCards)
+        {
+            RectTransform cardRectTransform = card.GetComponent<RectTransform>();
+            cardRectTransform.DOAnchorPos(new Vector2(cardRectTransform.anchoredPosition.x + (_cardsGapX * direction), cardRectTransform.anchoredPosition.y), _transitionTime);
 
-        //    RectTransform dotRectTransform = _paginationDots[i].GetComponent<RectTransform>();
-        //    // print($"i = {i}, _currentCardIndex = {_currentCardIndex}, _currentCardIndex-1 = {_currentCardIndex-1}");
-        //    if (i == _currentCardIndex)
-        //    {
-        //        //cardRectTransform.DOAnchorPos(new Vector2(cardRectTransform.anchoredPosition.x + (_cardsGapX * direction), cardRectTransform.anchoredPosition.y - _cardsGapY), _transitionTime);
-        //        cardRectTransform.GetChild(0).GetComponent<RectTransform>().DOAnchorPosY(- _cardsGapY, _transitionTime);
-        //        cardRectTransform.DOScale(new Vector2(_cardsMaxScale, _cardsMaxScale), 0.25f);
+            RectTransform dotRectTransform = _paginationDots[i].GetComponent<RectTransform>();
+            // print($"i = {i}, _currentCardIndex = {_currentCardIndex}, _currentCardIndex-1 = {_currentCardIndex-1}");
+            if (i == _currentCardIndex)
+            {
+                //cardRectTransform.DOAnchorPos(new Vector2(cardRectTransform.anchoredPosition.x + (_cardsGapX * direction), cardRectTransform.anchoredPosition.y - _cardsGapY), _transitionTime);
+                cardRectTransform.GetChild(0).GetComponent<RectTransform>().DOAnchorPosY(-_cardsGapY, _transitionTime);
+                cardRectTransform.DOScale(new Vector2(_cardsMaxScale, _cardsMaxScale), 0.25f);
 
-        //        _paginationDots[i].GetComponent<Image>().sprite = _paginationDotSelectedImg;
-        //        dotRectTransform.DOScale(new Vector3(1.5f, 1.5f), 0.25f);
-        //    }
-        //    else
-        //    {
-        //        //cardRectTransform.DOAnchorPos(new Vector2(cardRectTransform.anchoredPosition.x + (_cardsGapX * direction), cardRectTransform.anchoredPosition.y + _cardsGapY), _transitionTime);
-        //        cardRectTransform.GetChild(0).GetComponent<RectTransform>().DOAnchorPosY( _cardsGapY, _transitionTime);
-        //        cardRectTransform.DOScale(new Vector2(_cardsMinScale, _cardsMinScale), 0.25f);
+                _paginationDots[i].GetComponent<Image>().sprite = _paginationDotSelectedImg;
+                dotRectTransform.DOScale(new Vector3(1.5f, 1.5f), 0.25f);
+            }
+            else
+            {
+                //cardRectTransform.DOAnchorPos(new Vector2(cardRectTransform.anchoredPosition.x + (_cardsGapX * direction), cardRectTransform.anchoredPosition.y + _cardsGapY), _transitionTime);
+                cardRectTransform.GetChild(0).GetComponent<RectTransform>().DOAnchorPosY(_cardsGapY, _transitionTime);
+                cardRectTransform.DOScale(new Vector2(_cardsMinScale, _cardsMinScale), 0.25f);
 
-        //        _paginationDots[i].GetComponent<Image>().sprite = _paginationDotDefaultImg;
-        //        dotRectTransform.DOScale(new Vector3(1f, 1f), 0.25f);
+                _paginationDots[i].GetComponent<Image>().sprite = _paginationDotDefaultImg;
+                dotRectTransform.DOScale(new Vector3(1f, 1f), 0.25f);
 
-        //    }
-        //    i++;
-        //}
+            }
+            i++;
+        }
 
         //int i = 0;
         //foreach (GameObject card in _carouselCards)
