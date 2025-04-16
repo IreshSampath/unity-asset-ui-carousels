@@ -393,10 +393,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carousel Wheel
       objectReference: {fileID: 0}
-    - target: {fileID: 29089123769369774, guid: 169886a8d758a114b92741c413ec6533, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2827652479793579636, guid: 169886a8d758a114b92741c413ec6533, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
