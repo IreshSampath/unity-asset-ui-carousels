@@ -5,7 +5,10 @@ public class ClickableObject : MonoBehaviour, IPointerClickHandler
 {
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log($"Clicked GameObject: {gameObject.name}");
-        //AppEvents.RiseOnIngredientSelected(gameObject);
+        if (transform.parent == null || transform.parent.GetComponent<CarouselWheelItem>()?.CarouselItem == null)
+            return;
+
+        //Debug.Log($"Clicked GameObject: {transform.parent.GetComponent<CarouselWheelItem>()?.CarouselItem.Image}");
+        CarouselEvents.RaiseOnItemClicked(transform.parent.GetComponent<CarouselWheelItem>()?.CarouselItem);
     }
 }
