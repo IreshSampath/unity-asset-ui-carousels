@@ -1,10 +1,13 @@
+using System;
 using System.Collections.Generic;
 
+[Serializable]
 public class CarouselData
 {
     public List<CarouselItem> CarouselItems;
 }
 
+[Serializable]
 public class CarouselItem
 {
     public int ID;

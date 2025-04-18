@@ -240,6 +240,17 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!114 &243506500 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7172359533877958354, guid: 169886a8d758a114b92741c413ec6533, type: 3}
+  m_PrefabInstance: {fileID: 714680424}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60a752edd905fd4c84b0164df37a052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271087072
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,6 +528,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2827652479793579636, guid: 169886a8d758a114b92741c413ec6533, type: 3}
   m_PrefabInstance: {fileID: 714680424}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &712344757 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5783426907727831152, guid: 169886a8d758a114b92741c413ec6533, type: 3}
+  m_PrefabInstance: {fileID: 714680424}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60a752edd905fd4c84b0164df37a052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &714680424
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -528,10 +550,6 @@ PrefabInstance:
     - target: {fileID: 29089123769369774, guid: 169886a8d758a114b92741c413ec6533, type: 3}
       propertyPath: m_Name
       value: Carousel Wheel
-      objectReference: {fileID: 0}
-    - target: {fileID: 1732213597084160158, guid: 169886a8d758a114b92741c413ec6533, type: 3}
-      propertyPath: _selectedXPos
-      value: 355
       objectReference: {fileID: 0}
     - target: {fileID: 2827652479793579636, guid: 169886a8d758a114b92741c413ec6533, type: 3}
       propertyPath: m_Pivot.x
@@ -612,10 +630,6 @@ PrefabInstance:
     - target: {fileID: 2827652479793579636, guid: 169886a8d758a114b92741c413ec6533, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7770916535412902358, guid: 169886a8d758a114b92741c413ec6533, type: 3}
-      propertyPath: _selectedXPos
-      value: 355
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1620,6 +1634,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172da0e4c4b62dc46835067c072ef8be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _wheelCarousel1: {fileID: 712344757}
+  _wheelCarousel2: {fileID: 1927185882}
+  _wheelCarousel3: {fileID: 243506500}
 --- !u!4 &1858535696
 Transform:
   m_ObjectHideFlags: 0
@@ -1713,6 +1730,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880885533}
   m_CullTransparentMesh: 1
+--- !u!114 &1927185882 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6799846337825642471, guid: 169886a8d758a114b92741c413ec6533, type: 3}
+  m_PrefabInstance: {fileID: 714680424}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b60a752edd905fd4c84b0164df37a052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2011431764
 GameObject:
   m_ObjectHideFlags: 0

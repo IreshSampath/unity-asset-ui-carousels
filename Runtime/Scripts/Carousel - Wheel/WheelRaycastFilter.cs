@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CustomRaycastFilter : Image
+public class WheelRaycastFilter : Image
 {
     public override bool IsRaycastLocationValid(Vector2 screenPoint, Camera eventCamera)
     {

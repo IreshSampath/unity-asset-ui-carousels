@@ -8,7 +8,6 @@ public class ClickableObject : MonoBehaviour, IPointerClickHandler
         if (transform.parent == null || transform.parent.GetComponent<CarouselWheelItem>()?.CarouselItem == null)
             return;
 
-        //Debug.Log($"Clicked GameObject: {transform.parent.GetComponent<CarouselWheelItem>()?.CarouselItem.Image}");
-        CarouselEvents.RaiseOnItemClicked(transform.parent.GetComponent<CarouselWheelItem>()?.CarouselItem);
+        Debug.Log($"Clicked GameObject: {transform.parent.GetComponent<CarouselWheelItem>()?.CarouselItem.Image}");
     }
 }
